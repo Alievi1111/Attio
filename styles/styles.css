@@ -136,3 +136,50 @@ table {
   --primary-color: #000000;
   --second-color: #ffffff;
 }
+
+
+
+.fund-section {
+  background-color: var(--primary-color);
+  color: var(--second-color) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1392px;
+  height: 44px;
+  border-radius: 8px;
+  gap: 12px;
+}
+
+.fund-section .Read-More {
+  height: 18px;
+  width: 62px;
+  border-bottom: var(--second-color) solid 1px;
+}
+
+.Attio-section {
+  display: flex;
+  
+  align-items: center;
+  width: 1392px;
+}
+
+.Attio-section .nav-section ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  background-color: yellow;
+}
+
+.Login-section {
+  display: flex;
+  justify-content: end;
+}
+
+.Attio-section .Login-section ul {
+ background-color: red;
+ display: flex;
+ justify-content: space-between;
+  width: 221px;
+}
+
