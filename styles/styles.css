@@ -84,8 +84,7 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
+  
   border: 0;
   font-size: 100%;
   font: inherit;
@@ -159,27 +158,31 @@ table {
 
 .Attio-section {
   display: flex;
-  
   align-items: center;
   width: 1392px;
 }
+
+/* .Attio-section .Attio-logo {
+  gap: 62px;
+} */
 
 .Attio-section .nav-section ul {
   display: flex;
   justify-content: space-between;
   gap: 32px;
-  background-color: yellow;
+  
 }
 
 .Login-section {
   display: flex;
-  justify-content: end;
+  justify-content: space-between ;
 }
 
 .Attio-section .Login-section ul {
- background-color: red;
  display: flex;
- justify-content: space-between;
-  width: 221px;
+ justify-content: end;
+  width: 816px;
+  gap: 12px;
+  
 }
 
