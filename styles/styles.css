@@ -138,18 +138,17 @@ table {
 }
 
 .header-section {
-padding: 16px 24px 0px;
+  padding: 16px 24px 0px;
 }
-
 
 .fund-section {
   background-color: var(--primary-color);
-  color: var(--second-color) ;
+  color: var(--second-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  width: 1392px;
+  max-width: 1392px;
+  margin: 0 auto;
   height: 44px;
   border-radius: 8px;
   gap: 12px;
@@ -161,33 +160,37 @@ padding: 16px 24px 0px;
   border-bottom: var(--second-color) solid 1px;
 }
 
-.Attio-section {
+.attio-section {
   display: flex;
   align-items: center;
   width: 1392px;
+  padding-top: 16px;
+  margin: 0 auto;
 }
 
-/* .Attio-section .Attio-logo {
-  gap: 62px;
-} */
+.attio-logo {
+  padding-right: 64px;
+}
 
-.Attio-section .nav-section ul {
+.attio-section .nav-section ul {
   display: flex;
   justify-content: space-between;
   gap: 32px;
-  
 }
 
-.Login-section {
+.career-container {
   display: flex;
-  justify-content: space-between ;
+  gap: 4px;
 }
 
-.Attio-section .Login-section ul {
- display: flex;
- justify-content: end;
+.login-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.attio-section .login-section ul {
+  display: flex;
+  justify-content: end;
   width: 816px;
   gap: 12px;
-  
 }
-
