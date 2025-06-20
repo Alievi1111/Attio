@@ -2,8 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-body {
-}
+
 html,
 body,
 div,
@@ -170,7 +169,9 @@ body {
   border-bottom: var(--second-color) solid 1px;
 }
 
-.cancel-logo {
+.fund-section .cancel-logo {
+  position: absolute;
+  right: 36px;
 }
 
 .attio-section {
