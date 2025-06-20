@@ -2,7 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+body {
+}
 html,
 body,
 div,
@@ -132,9 +133,18 @@ table {
 }
 /* Global reset add */
 
+body {
+  font-family: inter, Arial, Helvetica, sans-serif;
+}
+
 :root {
   --primary-color: #000000;
   --second-color: #ffffff;
+}
+
+@font-face {
+  font-family: inter;
+  src: url("../assets/fonts/Inter_18pt-Bold.ttf");
 }
 
 .header-section {
@@ -154,22 +164,31 @@ table {
   gap: 12px;
 }
 
-.fund-section .Read-More {
+.fund-section .read-more {
   height: 18px;
   width: 62px;
   border-bottom: var(--second-color) solid 1px;
 }
 
+.cancel-logo {
+}
+
 .attio-section {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 1392px;
+  max-width: 1392px;
   padding-top: 16px;
   margin: 0 auto;
 }
 
 .attio-logo {
   padding-right: 64px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
 }
 
 .attio-section .nav-section ul {
@@ -186,11 +205,23 @@ table {
 .login-section {
   display: flex;
   justify-content: space-between;
+  gap: 12px;
 }
 
-.attio-section .login-section ul {
-  display: flex;
-  justify-content: end;
-  width: 816px;
-  gap: 12px;
+.attio-section .login-section button {
+  border-radius: 14px;
+  height: 40px;
+}
+
+.attio-section .login-section .sign-in {
+  width: 82px;
+  background-color: var(--second-color);
+  border: #edeef0 solid 1px;
+}
+
+.attio-section .login-section .start-free {
+  width: 127px;
+  background-color: var(--primary-color);
+  color: var(--second-color);
+  border: #555e67 solid 1px;
 }
