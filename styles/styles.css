@@ -133,7 +133,7 @@ table {
 /* Global reset add */
 
 :root {
-  --primary-color: #000000;
+  --primary-color: #1d1f20;
   --second-color: #ffffff;
   --primary-border: #555e67;
 }
@@ -164,7 +164,7 @@ table {
   border-radius: 8px;
   gap: 12px;
   font-size: 14px;
-  margin-bottom: 16px;
+  margin: 16px auto;
   position: relative;
   font-family: "inter-bold", Arial, Helvetica, sans-serif;
 }
