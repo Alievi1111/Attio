@@ -132,18 +132,19 @@ table {
 }
 /* Global reset add */
 
-body {
-  font-family: inter, Arial, Helvetica, sans-serif;
-}
-
 :root {
   --primary-color: #000000;
   --second-color: #ffffff;
 }
 
 @font-face {
-  font-family: inter;
+  font-family: inter-bold;
   src: url("../assets/fonts/Inter_18pt-Bold.ttf");
+}
+
+@font-face {
+  font-family: inter-regular;
+  src: url("../assets/fonts/Inter_24pt-Regular.ttf");
 }
 
 .header-section {
@@ -164,6 +165,7 @@ body {
   font-size: 14px;
   margin-bottom: 16px;
   position: relative;
+  font-family: inter-bold, Arial, Helvetica, sans-serif;
 }
 
 .fund-section .read-more {
@@ -196,6 +198,7 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
+  font-family: inter-regular, Arial, Helvetica, sans-serif;
 }
 
 .attio-section .nav-section ul {
