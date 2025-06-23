@@ -147,7 +147,7 @@ body {
 }
 
 .header-section {
-  padding: 16px 24px 0px;
+  padding: 0px 24px 0px;
 }
 
 .fund-section {
@@ -162,6 +162,8 @@ body {
   border-radius: 8px;
   gap: 12px;
   font-size: 14px;
+  margin-bottom: 16px;
+  position: relative;
 }
 
 .fund-section .read-more {
@@ -170,9 +172,11 @@ body {
   border-bottom: var(--second-color) solid 1px;
 }
 
-.fund-section .cancel-logo {
+.cancel-logo-container {
+  all: unset;
   position: absolute;
-  right: 36px;
+  right: 16px;
+  cursor: pointer;
 }
 
 .attio-section {
@@ -180,7 +184,7 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1392px;
-  padding-top: 16px;
+
   margin: 0 auto;
 }
 
@@ -191,6 +195,7 @@ body {
 .nav-container {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .attio-section .nav-section ul {
@@ -219,6 +224,7 @@ body {
   width: 82px;
   background-color: var(--second-color);
   border: #edeef0 solid 1px;
+  cursor: pointer;
 }
 
 .attio-section .login-section .start-free {
@@ -226,4 +232,5 @@ body {
   background-color: var(--primary-color);
   color: var(--second-color);
   border: #555e67 solid 1px;
+  cursor: pointer;
 }
