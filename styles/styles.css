@@ -84,8 +84,8 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
   padding: 0;
+  margin: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
@@ -135,4 +135,110 @@ table {
 :root {
   --primary-color: #000000;
   --second-color: #ffffff;
+  --primary-border: #555e67;
+}
+
+@font-face {
+  font-family: "inter-bold";
+  src: url("../assets/fonts/Inter_18pt-Bold.ttf");
+}
+
+@font-face {
+  font-family: "inter-regular";
+  src: url("../assets/fonts/Inter_24pt-Regular.ttf");
+}
+
+.header-section {
+  padding: 0px 24px 0px;
+}
+
+.fund-section {
+  background-color: var(--primary-color);
+  color: var(--second-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1392px;
+  margin: 0 auto;
+  height: 44px;
+  border-radius: 8px;
+  gap: 12px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  position: relative;
+  font-family: "inter-bold", Arial, Helvetica, sans-serif;
+}
+
+.fund-section .read-more {
+  height: 18px;
+  width: 62px;
+  border-bottom: var(--second-color) solid 1px;
+}
+
+.cancel-logo-container {
+  all: unset;
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+}
+
+.attio-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1392px;
+  margin: 0 auto;
+}
+
+.attio-logo {
+  padding-right: 64px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: "inter-regular", Arial, Helvetica, sans-serif;
+}
+
+.attio-section .nav-section ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.attio-section .nav-section ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.career-container {
+  display: flex;
+  gap: 4px;
+}
+
+.login-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.attio-section .login-section button {
+  border-radius: 14px;
+  height: 40px;
+}
+
+.attio-section .login-section .sign-in {
+  width: 82px;
+  background-color: var(--second-color);
+  border: #edeef0 solid 1px;
+  cursor: pointer;
+}
+
+.attio-section .login-section .start-free {
+  width: 127px;
+  background-color: var(--primary-color);
+  color: var(--second-color);
+  border: var(--primary-border) solid 1px;
+  cursor: pointer;
 }
