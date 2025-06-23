@@ -135,15 +135,16 @@ table {
 :root {
   --primary-color: #000000;
   --second-color: #ffffff;
+  --primary-border: #555e67;
 }
 
 @font-face {
-  font-family: inter-bold;
+  font-family: "inter-bold";
   src: url("../assets/fonts/Inter_18pt-Bold.ttf");
 }
 
 @font-face {
-  font-family: inter-regular;
+  font-family: "inter-regular";
   src: url("../assets/fonts/Inter_24pt-Regular.ttf");
 }
 
@@ -165,7 +166,7 @@ table {
   font-size: 14px;
   margin-bottom: 16px;
   position: relative;
-  font-family: inter-bold, Arial, Helvetica, sans-serif;
+  font-family: "inter-bold", Arial, Helvetica, sans-serif;
 }
 
 .fund-section .read-more {
@@ -186,7 +187,6 @@ table {
   justify-content: space-between;
   align-items: center;
   max-width: 1392px;
-
   margin: 0 auto;
 }
 
@@ -198,13 +198,18 @@ table {
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-family: inter-regular, Arial, Helvetica, sans-serif;
+  font-family: "inter-regular", Arial, Helvetica, sans-serif;
 }
 
 .attio-section .nav-section ul {
   display: flex;
   justify-content: space-between;
   gap: 32px;
+}
+
+.attio-section .nav-section ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 .career-container {
@@ -234,6 +239,6 @@ table {
   width: 127px;
   background-color: var(--primary-color);
   color: var(--second-color);
-  border: #555e67 solid 1px;
+  border: var(--primary-border) solid 1px;
   cursor: pointer;
 }
