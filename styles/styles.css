@@ -242,3 +242,92 @@ table {
   border: var(--primary-border) solid 1px;
   cursor: pointer;
 }
+
+/* Hero Section */
+
+.hero-section {
+  max-width: 826px;
+  height: 572px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+.announcement-banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 346px;
+  height: 28px;
+  margin: 0 auto;
+  background-color: #f4f5f6;
+  border-radius: 15px;
+}
+.img-container {
+  display: flex;
+  width: 14px;
+  height: 13px;
+  background-color: var(--second-color);
+}
+
+.announcement-banner .new-span {
+  width: 48px;
+  height: 26px;
+  background-color: var(--primary-color);
+  color: var(--second-color);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.text-section {
+  max-width: 826px;
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.main-container h2 {
+  font-weight: bold;
+  font-size: 92px;
+}
+.main-container span {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container p {
+  max-width: 500px;
+  height: 64px;
+  font-size: 22px;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+
+.btn-section {
+  display: flex;
+  max-width: 266px;
+  height: 48px;
+  margin-top: 32px;
+}
+.btn-section button {
+  width: 128px;
+  height: 48px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #f4f5f6;
+}
+.btn-section .first-btn {
+  background-color: var(--primary-color);
+}
+.btn-section a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+.second-btn a {
+  color: var(--primary-color);
+}
