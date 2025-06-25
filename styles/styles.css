@@ -133,7 +133,7 @@ table {
 /* Global reset add */
 
 :root {
-  --primary-color: #000000;
+  --primary-color: #1d1f20;
   --second-color: #ffffff;
   --primary-border: #555e67;
 }
@@ -149,7 +149,7 @@ table {
 }
 
 .header-section {
-  padding: 0px 24px 0px;
+  padding: 16px 24px 0px;
 }
 
 .fund-section {
@@ -224,8 +224,8 @@ table {
 }
 
 .attio-section .login-section button {
-  border-radius: 14px;
-  height: 40px;
+  border-radius: 10px;
+  padding: 8px 16px;
 }
 
 .attio-section .login-section .sign-in {
@@ -238,7 +238,37 @@ table {
 .attio-section .login-section .start-free {
   width: 127px;
   background-color: var(--primary-color);
-  color: var(--second-color);
+
   border: var(--primary-border) solid 1px;
   cursor: pointer;
+}
+
+.attio-section .login-section .start-free a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+.attio-section .login-section .sign-in a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.burger {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav-section {
+    display: none;
+  }
+  .login-section {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
 }
