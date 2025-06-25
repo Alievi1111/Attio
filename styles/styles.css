@@ -136,6 +136,7 @@ table {
   --primary-color: #000000;
   --second-color: #ffffff;
   --primary-border: #555e67;
+  --background-color: #f4f5f6;
 }
 
 @font-face {
@@ -258,7 +259,7 @@ table {
   max-width: 346px;
   height: 28px;
   margin: 0 auto;
-  background-color: #f4f5f6;
+  background-color: var(--background-color);
   border-radius: 15px;
 }
 .img-container {
@@ -321,7 +322,7 @@ table {
   border-radius: 15px;
   border: none;
   cursor: pointer;
-  background-color: #f4f5f6;
+  background-color: var(--background-color);
 }
 .btn-section .first-btn {
   background-color: var(--primary-color);
