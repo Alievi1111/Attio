@@ -149,7 +149,7 @@ table {
 }
 
 .header-section {
-  padding: 16px 24px 0px;
+  padding: 0px 24px 0px;
 }
 
 .fund-section {
@@ -159,12 +159,13 @@ table {
   justify-content: center;
   align-items: center;
   max-width: 1392px;
+  width: 100%;
   margin: 0 auto;
   height: 44px;
   border-radius: 8px;
   gap: 12px;
   font-size: 14px;
-  margin-bottom: 16px;
+  margin: 16px auto;
   position: relative;
   font-family: "inter-bold", Arial, Helvetica, sans-serif;
 }
@@ -187,6 +188,7 @@ table {
   justify-content: space-between;
   align-items: center;
   max-width: 1392px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -223,32 +225,30 @@ table {
   gap: 12px;
 }
 
-.attio-section .login-section button {
+.attio-section .login-section a {
   border-radius: 10px;
   padding: 8px 16px;
+  text-decoration: none;
 }
 
 .attio-section .login-section .sign-in {
-  width: 82px;
   background-color: var(--second-color);
   border: #edeef0 solid 1px;
   cursor: pointer;
 }
 
 .attio-section .login-section .start-free {
-  width: 127px;
   background-color: var(--primary-color);
-
   border: var(--primary-border) solid 1px;
   cursor: pointer;
 }
 
-.attio-section .login-section .start-free a {
+.attio-section .login-section .start-free {
   text-decoration: none;
   color: var(--second-color);
 }
 
-.attio-section .login-section .sign-in a {
+.attio-section .login-section .sign-in {
   text-decoration: none;
   color: var(--primary-color);
 }
@@ -270,5 +270,12 @@ table {
   }
   .burger {
     display: flex;
+  }
+  .fund-section {
+  }
+
+  .header-section {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
