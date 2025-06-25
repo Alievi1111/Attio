@@ -159,12 +159,13 @@ table {
   justify-content: center;
   align-items: center;
   max-width: 1392px;
+  width: 100%;
   margin: 0 auto;
   height: 44px;
   border-radius: 8px;
   gap: 12px;
   font-size: 14px;
-  margin: 16px aut0;
+  margin: 16px auto;
   position: relative;
   font-family: "inter-bold", Arial, Helvetica, sans-serif;
 }
@@ -187,6 +188,7 @@ table {
   justify-content: space-between;
   align-items: center;
   max-width: 1392px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -223,22 +225,30 @@ table {
   gap: 12px;
 }
 
-.attio-section .login-section button {
-  border-radius: 14px;
-  height: 40px;
+.attio-section .login-section a {
+  border-radius: 10px;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
 .attio-section .login-section .sign-in {
-  width: 82px;
   background-color: var(--second-color);
   border: #edeef0 solid 1px;
   cursor: pointer;
 }
 
 .attio-section .login-section .start-free {
-  width: 127px;
   background-color: var(--primary-color);
-  color: var(--second-color);
   border: var(--primary-border) solid 1px;
   cursor: pointer;
+}
+
+.attio-section .login-section .start-free {
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+.attio-section .login-section .sign-in {
+  text-decoration: none;
+  color: var(--primary-color);
 }
