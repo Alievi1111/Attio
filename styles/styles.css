@@ -291,8 +291,9 @@ table {
 }
 
 .main-container h2 {
+  font-family: "inter-bold", Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 92px;
+  font-size: 87px;
 }
 .main-container span {
   display: flex;
@@ -302,9 +303,10 @@ table {
 .main-container p {
   max-width: 500px;
   height: 64px;
-  font-size: 22px;
+  font-size: 19px;
   margin: 0 auto;
   padding-top: 32px;
+  font-family: "inter-bold", Arial, Helvetica, sans-serif;
 }
 
 .btn-section {
