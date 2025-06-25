@@ -164,7 +164,7 @@ table {
   border-radius: 8px;
   gap: 12px;
   font-size: 14px;
-  margin-bottom: 16px;
+  margin: 16px aut0;
   position: relative;
   font-family: "inter-bold", Arial, Helvetica, sans-serif;
 }
