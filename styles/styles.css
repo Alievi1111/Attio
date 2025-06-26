@@ -248,7 +248,7 @@ table {
 
 .hero-section {
   max-width: 826px;
-  height: 572px;
+  min-height: 572px;
   margin: 0 auto;
   padding-top: 80px;
 }
@@ -284,7 +284,7 @@ table {
 
 .text-section {
   max-width: 826px;
-  height: 352px;
+  min-height: 352px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -301,11 +301,12 @@ table {
 }
 
 .main-container p {
-  max-width: 450px;
+  max-width: 548px;
   height: 64px;
   font-size: 19px;
   margin: 0 auto;
   padding-top: 32px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn-section {
@@ -313,8 +314,14 @@ table {
   max-width: 266px;
   height: 48px;
   margin-top: 32px;
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.btn-section button {
+
+.btn-section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 128px;
   height: 48px;
   border-radius: 15px;
@@ -322,12 +329,14 @@ table {
   cursor: pointer;
   background-color: var(--background-color);
 }
-.btn-section .first-btn {
+
+.btn-section .first-a-link {
   background-color: var(--primary-color);
+  color: var(--background-color);
 }
 .btn-section a {
   text-decoration: none;
-  color: var(--second-color);
+  color: var(--primary-color);
 }
 .second-btn a {
   color: var(--primary-color);
