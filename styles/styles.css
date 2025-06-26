@@ -341,3 +341,21 @@ table {
 .second-btn a {
   color: var(--primary-color);
 }
+
+.video-container {
+  margin-top: 140px;
+  position: relative;
+  max-width: 1252px;
+}
+
+.video-container .main-photo {
+  display: flex;
+  justify-content: center;
+}
+
+.play-button-container {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%);
+}
