@@ -139,13 +139,18 @@ table {
 }
 
 @font-face {
-  font-family: "inter-bold";
-  src: url("../assets/fonts/Inter_18pt-Bold.ttf");
+  font-family: "inter-semi-bold";
+  src: url("../assets/fonts/Inter_18pt-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "inter-regular";
   src: url("../assets/fonts/Inter_24pt-Regular.ttf");
+}
+
+@font-face {
+  font-family: "inter-medium";
+  src: url("../assets/fonts/Inter_18pt-Medium.ttf");
 }
 
 .header-section {
@@ -167,13 +172,12 @@ table {
   font-size: 14px;
   margin: 16px auto;
   position: relative;
-  font-family: "inter-bold", Arial, Helvetica, sans-serif;
+  font-family: "inter-semi-bold", Arial, Helvetica, sans-serif;
 }
 
 .fund-section .read-more {
   height: 15px;
-
-  border-bottom: var(--second-color) solid 1px;
+  border-bottom: var(--second-color) solid 2px;
   font-size: 12px;
   cursor: pointer;
 }
@@ -257,8 +261,7 @@ table {
 
 .burger {
   display: none;
-  width: 10px;
-  border: var(--primary-color) solid 1px;
+  height: 32px;
 }
 
 .attio-margin-top {
@@ -278,10 +281,19 @@ table {
   }
   .burger {
     display: flex;
+    all: unset;
+    cursor: pointer;
   }
   .fund-section h3 {
     padding: 0px 40px;
     text-align: center;
+    font-family: "inter-medium" Arial, Helvetica, sans-serif;
+    font-weight: 500px;
+  }
+
+  .fund-section span {
+    font-family: "inter-semi-bold" Arial, Helvetica, sans-serif;
+    font-weight: 600px;
   }
 
   .header-section {
