@@ -295,7 +295,7 @@ table {
   font-family: "inter-bold", Arial, Helvetica, sans-serif;
   font-size: 87px;
 }
-.main-container span {
+.main-container .first-span {
   display: flex;
   justify-content: center;
 }
@@ -358,4 +358,10 @@ table {
   top: 50%;
   right: 50%;
   transform: translateY(-50%);
+}
+@media (max-width: 800px) {
+  .main-container span {
+    display: flex;
+    justify-content: center;
+  }
 }
