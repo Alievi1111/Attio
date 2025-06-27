@@ -1,6 +1,6 @@
 const fund = document.querySelector("#fund");
 const removeBtn = document.querySelector("#removeBtn");
-const attio = document.querySelector("attio");
+const attio = document.querySelector("#attio");
 
 removeBtn.addEventListener("click", function () {
   fund.classList.add("hidden");
