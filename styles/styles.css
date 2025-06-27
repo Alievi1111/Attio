@@ -171,9 +171,11 @@ table {
 }
 
 .fund-section .read-more {
-  height: 18px;
-  width: 62px;
+  height: 15px;
+
   border-bottom: var(--second-color) solid 1px;
+  font-size: 12px;
+  cursor: pointer;
 }
 
 .cancel-logo-container {
@@ -255,6 +257,8 @@ table {
 
 .burger {
   display: none;
+  width: 10px;
+  border: var(--primary-color) solid 1px;
 }
 
 .attio-margin-top {
@@ -275,7 +279,9 @@ table {
   .burger {
     display: flex;
   }
-  .fund-section {
+  .fund-section h3 {
+    padding: 0px 40px;
+    text-align: center;
   }
 
   .header-section {
