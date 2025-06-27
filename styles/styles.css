@@ -180,6 +180,7 @@ table {
   border-bottom: var(--second-color) solid 2px;
   font-size: 12px;
   cursor: pointer;
+  margin-left: 12px;
 }
 
 .cancel-logo-container {
