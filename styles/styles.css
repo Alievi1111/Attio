@@ -154,6 +154,10 @@ table {
   src: url("../assets/fonts/Inter_18pt-Medium.ttf");
 }
 
+body {
+  font-family: "inter-regular", Arial, Helvetica, sans-serif;
+}
+
 .header-section {
   padding: 0px 24px 0px;
 }
