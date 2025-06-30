@@ -184,6 +184,11 @@ table {
   text-decoration: none;
 }
 
+.read-more a {
+  color: var(--second-color);
+  text-decoration: none;
+}
+
 .cancel-logo-container {
   all: unset;
   position: absolute;
