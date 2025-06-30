@@ -218,7 +218,6 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-family: "inter-regular", Arial, Helvetica, sans-serif;
 }
 
 .attio-section .nav-section ul {
