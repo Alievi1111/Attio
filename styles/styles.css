@@ -136,6 +136,7 @@ table {
   --primary-color: #1d1f20;
   --second-color: #ffffff;
   --primary-border: #555e67;
+  --border-color: #edeef0;
 }
 
 @font-face {
@@ -246,7 +247,7 @@ table {
 
 .attio-section .login-section .sign-in {
   background-color: var(--second-color);
-  border: #edeef0 solid 1px;
+  border: var(--border-color) solid 1px;
   cursor: pointer;
 }
 
@@ -256,13 +257,15 @@ table {
   cursor: pointer;
 }
 
-.attio-section .login-section .start-free {
+.attio-section .login-section {
   text-decoration: none;
+}
+
+.attio-section .login-section .start-free {
   color: var(--second-color);
 }
 
 .attio-section .login-section .sign-in {
-  text-decoration: none;
   color: var(--primary-color);
 }
 
@@ -288,7 +291,7 @@ table {
 }
 
 .mobile-menu a {
-  color: white;
+  color: var(--second-color);
   text-decoration: none;
   padding: 14px;
   border-radius: 5px;
