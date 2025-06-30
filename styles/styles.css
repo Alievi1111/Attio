@@ -136,6 +136,12 @@ table {
   --primary-color: #000000;
   --second-color: #ffffff;
   --primary-border: #555e67;
+  --bg-color1: #232529;
+  --bg-color2: #000000;
+  --text-color1: #9098a0;
+  --text-color2: #ffffff;
+  --text-color3: #edeff0;
+  --text-size1: 22px;
 }
 
 @font-face {
@@ -242,3 +248,73 @@ table {
   border: var(--primary-border) solid 1px;
   cursor: pointer;
 }
+
+/* footer start */
+.footer_005 {
+  max-width: 1440px;
+  min-height: 1142px;
+  background-color: var(--bg-color1);
+  padding: 116px 94px;
+  margin: 0 auto;
+}
+.footer_005_content {
+  max-width: 1252px;
+  min-height: 910px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.content_cntainer {
+  max-width: 464px;
+  min-height: 138px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.content_cntainer_white {
+  color: var(--text-color1);
+  font-size: 52px;
+}
+.content_cntainer_gray {
+  color: var(--text-color2);
+  font-size: 52px;
+}
+.content_container_p {
+  color: var(--text-color3);
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.card_container {
+  max-width: 1252px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 32px;
+  padding: 10px;
+  border: 2px solid var(--text-color2);
+}
+.card_1 {
+  max-width: 401px;
+  min-height: 342px;
+  padding: 4px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid var(--text-color2);
+}
+
+.card_1_photo {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  height: 150px;
+}
+
+.card_1_text {
+  max-width: 313px;
+  min-height: 86px;
+}
+
+/* footer and */
