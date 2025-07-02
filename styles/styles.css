@@ -343,7 +343,7 @@ table {
 }
 
 .video-container {
-  margin-top: 140px;
+  margin-top: 80px;
   position: relative;
   max-width: 1252px;
 }
@@ -353,12 +353,6 @@ table {
   justify-content: center;
 }
 
-.play-button-container {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translateY(-50%);
-}
 @media (max-width: 800px) {
   .main-container span {
     display: flex;
