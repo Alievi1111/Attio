@@ -1,0 +1,14 @@
+const fund = document.querySelector("#fund");
+const removeBtn = document.querySelector("#removeBtn");
+const attio = document.querySelector("#attio");
+const burger = document.querySelector("#burger");
+const mobileMenu = document.querySelector("#mobile-menu");
+
+removeBtn.addEventListener("click", function () {
+  fund.classList.add("hidden");
+  attio.classList.add("attio-margin-top");
+});
+
+burger.addEventListener("click", function () {
+  mobileMenu.classList.toggle("active");
+});

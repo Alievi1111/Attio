@@ -133,20 +133,30 @@ table {
 /* Global reset add */
 
 :root {
-  --primary-color: #000000;
+  --primary-color: #1d1f20;
   --second-color: #ffffff;
   --primary-border: #555e67;
+  --border-color: #edeef0;
   --background-color: #f4f5f6;
 }
 
 @font-face {
-  font-family: "inter-bold";
-  src: url("../assets/fonts/Inter_18pt-Bold.ttf");
+  font-family: "inter-semi-bold";
+  src: url("../assets/fonts/Inter_18pt-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "inter-regular";
   src: url("../assets/fonts/Inter_24pt-Regular.ttf");
+}
+
+@font-face {
+  font-family: "inter-medium";
+  src: url("../assets/fonts/Inter_18pt-Medium.ttf");
+}
+
+body {
+  font-family: "inter-regular", Arial, Helvetica, sans-serif;
 }
 
 .header-section {
@@ -160,20 +170,29 @@ table {
   justify-content: center;
   align-items: center;
   max-width: 1392px;
+  width: 100%;
   margin: 0 auto;
   height: 44px;
   border-radius: 8px;
   gap: 12px;
   font-size: 14px;
-  margin-bottom: 16px;
+  margin: 16px auto;
   position: relative;
-  font-family: "inter-bold", Arial, Helvetica, sans-serif;
+  font-family: "inter-semi-bold", Arial, Helvetica, sans-serif;
 }
 
 .fund-section .read-more {
-  height: 18px;
-  width: 62px;
-  border-bottom: var(--second-color) solid 1px;
+  height: 15px;
+  border-bottom: var(--second-color) solid 2px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 12px;
+  text-decoration: none;
+}
+
+.read-more a {
+  color: var(--second-color);
+  text-decoration: none;
 }
 
 .cancel-logo-container {
@@ -188,6 +207,7 @@ table {
   justify-content: space-between;
   align-items: center;
   max-width: 1392px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -199,7 +219,6 @@ table {
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-family: "inter-regular", Arial, Helvetica, sans-serif;
 }
 
 .attio-section .nav-section ul {
@@ -224,26 +243,120 @@ table {
   gap: 12px;
 }
 
-.attio-section .login-section button {
-  border-radius: 14px;
-  height: 40px;
+.attio-section .login-section a {
+  border-radius: 10px;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
 .attio-section .login-section .sign-in {
-  width: 82px;
   background-color: var(--second-color);
-  border: #edeef0 solid 1px;
+  border: var(--border-color) solid 1px;
   cursor: pointer;
 }
 
 .attio-section .login-section .start-free {
-  width: 127px;
   background-color: var(--primary-color);
-  color: var(--second-color);
   border: var(--primary-border) solid 1px;
   cursor: pointer;
 }
 
+.attio-section .login-section {
+  text-decoration: none;
+}
+
+.attio-section .login-section .start-free {
+  color: var(--second-color);
+}
+
+.attio-section .login-section .sign-in {
+  color: var(--primary-color);
+}
+
+.burger {
+  display: none;
+  height: 32px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-border);
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  right: -100%;
+  transition: right 0.5s ease-in-out;
+  z-index: 1000;
+}
+
+.mobile-menu a {
+  color: var(--second-color);
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+  right: 0%;
+}
+
+.mobile-menu a:hover {
+  background-color: var(--primary-color);
+}
+
+.attio-margin-top {
+  margin-top: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav-section {
+    display: none;
+  }
+  .login-section {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+    all: unset;
+    cursor: pointer;
+    z-index: 1002;
+  }
+
+  .fund-section h3 {
+    padding: 0px 40px;
+    text-align: center;
+    font-family: "inter-medium" Arial, Helvetica, sans-serif;
+    font-weight: 500px;
+  }
+
+  .fund-section span {
+    font-family: "inter-semi-bold" Arial, Helvetica, sans-serif;
+    font-weight: 600px;
+  }
+
+  .header-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .attio-section {
+    margin-top: 16px;
+  }
 /* Hero Section */
 
 .hero-section {

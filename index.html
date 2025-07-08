@@ -9,14 +9,15 @@
   <body>
     <header class="header-section">
       <!-- top -->
-      <div class="fund-section">
-        <h3>We've raised a $23.5m Series A led by Redpoint Ventures!</h3>
-        <img
-          src="images/vectors/Read-More.svg"
-          alt="Read More"
-          class="read-more"
-        />
-        <button class="cancel-logo-container">
+      <div id="fund" class="fund-section">
+        <h3>
+          We've raised a $23.5m Series A led by Redpoint Ventures!
+          <span class="read-more"
+            ><a href="pages/readmore.html">Read more</a></span
+          >
+        </h3>
+
+        <button id="removeBtn" class="cancel-logo-container">
           <img
             src="images/vectors/cancel.svg"
             alt="cancel"
@@ -24,8 +25,9 @@
           />
         </button>
       </div>
+
       <!-- bottom -->
-      <div class="attio-section">
+      <div id="attio" class="attio-section">
         <div class="nav-container">
           <img
             src="images/vectors/Attio-Logo.svg"
@@ -46,14 +48,24 @@
             </ul>
           </nav>
         </div>
+
+        <div class="mobile-menu" id="mobile-menu">
+          <a href="pages/customer.html">Customer</a>
+          <a href="pages/changelog.html">Chanelog</a>
+          <a href="pages/help.html">Help</a>
+          <a href="pages/careers.html">Careers</a>
+          <a href="pages/pricing.html">Pricing</a>
+        </div>
+
+        <button id="burger" class="burger">
+          <img src="images/vectors/burger-menu.svg" alt="burger-menu" />
+        </button>
+
         <!-- login -->
         <div class="login-section">
-          <button class="sign-in">
-            <a href="pages/signin.html"></a>Sign in
-          </button>
-          <button class="start-free">
-            <a href="pages/startfree.html"></a>Start for free
-          </button>
+          <a href="pages/signin.html" class="sign-in">Sign in</a>
+
+          <a href="pages/startfree.html" class="start-free">Start for free</a>
         </div>
       </div>
     </header>
