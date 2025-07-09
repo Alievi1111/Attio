@@ -3,6 +3,8 @@ const removeBtn = document.querySelector("#removeBtn");
 const attio = document.querySelector("#attio");
 const burger = document.querySelector("#burger");
 const mobileMenu = document.querySelector("#mobile-menu");
+const contact = document.querySelector("#contact");
+const popup = document.querySelector("#contactPopup");
 
 removeBtn.addEventListener("click", function () {
   fund.classList.add("hidden");
@@ -11,4 +13,8 @@ removeBtn.addEventListener("click", function () {
 
 burger.addEventListener("click", function () {
   mobileMenu.classList.toggle("active");
+});
+
+contact.addEventListener("click", function () {
+  popup.classList.add("visible");
 });
