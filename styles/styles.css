@@ -138,6 +138,7 @@ table {
   --primary-border: #555e67;
   --border-color: #edeef0;
   --background-color: #f4f5f6;
+  --text-secondary-color: #31373d;
 }
 
 @font-face {
@@ -430,10 +431,8 @@ body {
   margin: 0 auto;
   padding-top: 32px;
   letter-spacing: -0.3px;
-}
-.main-container p span {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  color: var(--text-secondary-color);
 }
 
 .btn-section {
