@@ -5,6 +5,7 @@ const burger = document.querySelector("#burger");
 const mobileMenu = document.querySelector("#mobile-menu");
 const contact = document.querySelector("#contact");
 const popup = document.querySelector("#contactPopup");
+const footerBottom = document.querySelector("#footerBottom");
 
 removeBtn.addEventListener("click", function () {
   fund.classList.add("hidden");
@@ -16,5 +17,5 @@ burger.addEventListener("click", function () {
 });
 
 contact.addEventListener("click", function () {
-  popup.classList.add("visible");
+  popup.classList.toggle("visible");
 });
