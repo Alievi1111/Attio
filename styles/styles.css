@@ -492,7 +492,6 @@ body {
 }
 
 .footer-attio-logo-section {
-  padding: 64px 0 0 94px;
   cursor: pointer;
 }
 
@@ -694,11 +693,11 @@ body {
   display: flex;
   right: 0;
 }
-
 @media (max-width: 900px) {
   .footer-top-container {
-    flex-wrap: wrap;
-    max-width: 450px;
+    flex-direction: column;
+    align-items: center;
+
     gap: 15px;
   }
 
@@ -709,6 +708,7 @@ body {
   .footer-bottom {
     border-top: none;
     flex-direction: column;
+    align-items: center;
     margin: 0 auto;
   }
 
@@ -717,7 +717,8 @@ body {
   }
 
   .footer-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 
@@ -728,5 +729,6 @@ body {
   }
   .footer-bottom span {
     color: var(--primary-border);
+    align-items: center;
   }
 }
